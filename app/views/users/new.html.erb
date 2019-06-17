@@ -1,6 +1,8 @@
+<body style="background-color:skyblue;color:white;padding:330px;text-align:center">
 <%= form_for :user, url: '/users' do |f| %>
-  Username: <%= f.text_field :name %>
-  Password: <%= f.password_field :password %>
-  Password Confirmation: <%= f.password_field :password_confirmation %>
-  <%= f.submit "Submit" %>
+  Username: <%= f.text_field :name %><br>
+  Password: <%= f.password_field :password %><br>
+  Password Confirmation: <%= f.password_field :password_confirmation %><hr>
+  <%= f.submit "login" %>
 <% end %>
+</body>
